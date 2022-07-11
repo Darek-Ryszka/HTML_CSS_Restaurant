@@ -15,3 +15,7 @@
     --h2-font:2.25rem;
     --p-font:0.9rem;
 }
+*::selection {
+    background: var(--main-color);
+    color: #fff;
+}
