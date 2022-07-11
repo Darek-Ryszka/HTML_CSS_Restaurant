@@ -53,3 +53,8 @@ header {
     color: var(--main-color);
     transition: .4s;
 }
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
