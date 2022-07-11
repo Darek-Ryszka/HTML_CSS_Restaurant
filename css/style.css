@@ -19,3 +19,7 @@
     background: var(--main-color);
     color: #fff;
 }
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
