@@ -35,3 +35,8 @@ header {
     padding: 30px 170px;
     background: var(--bg-color);
 }
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
