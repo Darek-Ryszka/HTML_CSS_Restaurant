@@ -58,3 +58,141 @@ header {
     cursor: pointer;
     display: none;
 }
+section {
+    padding: 70px 17%;
+}
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.home-img img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+.home-text h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+.about-text span {
+    color:var(--main-color) ;
+    font-weight: 600;
+}
+.about-text h2 {
+    font-size: var(--h2-font);
+}
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+.heading {
+    text-align: center;
+}
+.heading span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.heading h2 {
+    font-size: var(--h2-font);
+}
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.box {
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.box-img {
+    width: 220px;
+    height: 220px;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
+.box h2 {
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+.box h3 {
+    color:var(--bg-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+.box span {
+    font-size: var(--p-font);
+    color: var(--main-color);
+    font-weight: 600;
+}
+.box .bx {
+    background: var(--main-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+}
+.s-box {
+    text-align: center;
+    padding: 20px 30px;
+}
+.s-box img {
+    width: 90px;
+}
+.s-box h3 {
+    margin: 4px 0 10px;
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+.s-box p {
+    line-height: 1.7;
+}
