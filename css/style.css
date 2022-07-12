@@ -93,3 +93,14 @@ section {
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
