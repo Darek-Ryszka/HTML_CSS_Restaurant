@@ -58,3 +58,6 @@ header {
     cursor: pointer;
     display: none;
 }
+section {
+    padding: 70px 17%;
+}
