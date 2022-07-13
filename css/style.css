@@ -10,7 +10,7 @@
 :root {
     --main-color:#ff702a;
     --text-color:#fff;
-    --bg-color:#1e1c2a;
+    --bg-color:#241818;
     --big-font:5rem;
     --h2-font:2.25rem;
     --p-font:0.9rem;
@@ -195,4 +195,145 @@ section {
 }
 .s-box p {
     line-height: 1.7;
+}
+.cta {
+    background: #feeee7;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.cta h2 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    padding: 10px 0;
+}
+.col {
+    width: 25%;
+}
+.col h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--main-color);
+}
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+.col ul li a {
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover {
+    color: var(--text-color);
+    transform: translateX(-12px);
+}
+.col .social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a {
+    height: 40px;
+    width: 40px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .social a:hover {
+    transform: scale(1.2);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+
+
+@media (max-width: 1560px) {
+    header {
+        padding: 15px 40px;
+    }
+    :root {
+        --big-font:3.5rem;
+        --h2-font:2rem;
+    }
+}
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+    #menu-icon {
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #3f2a24;
+        transition: .3s;
+    }
+    header .navbar.active {
+        top: 70px;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+    }
+    .col {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 720px) {
+    header {
+        padding: 10px 16px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img {
+        order: 2;
+    }
+    section {
+        padding: 100px 7%;
+    }
+}
+@media (max-width: 575px) {
+    .col {
+        width: 100%;
+    }
 }
