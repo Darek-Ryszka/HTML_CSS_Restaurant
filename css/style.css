@@ -248,3 +248,26 @@ section {
     color: var(--text-color);
     transform: translateX(-12px);
 }
+.col .social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a {
+    height: 40px;
+    width: 40px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .social a:hover {
+    transform: scale(1.2);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
