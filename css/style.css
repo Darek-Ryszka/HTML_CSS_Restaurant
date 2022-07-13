@@ -209,3 +209,10 @@ section {
     color: var(--bg-color);
     margin-bottom: 30px;
 }
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    padding: 10px 0;
+}
