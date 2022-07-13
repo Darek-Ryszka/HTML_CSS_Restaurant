@@ -234,3 +234,17 @@ section {
     bottom: -8px;
     background: var(--main-color);
 }
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+.col ul li a {
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover {
+    color: var(--text-color);
+    transform: translateX(-12px);
+}
